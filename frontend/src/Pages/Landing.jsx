@@ -8,6 +8,7 @@ import Footer from '../Components/Footer'
 const Landing = () => {
   return (
     <>
+    <Navbar/>
     <HeroSection/>
     <WhyUsSection/>
     <Gallery/>

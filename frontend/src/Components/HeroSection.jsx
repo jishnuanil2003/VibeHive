@@ -1,9 +1,10 @@
 import React from "react";
 import Navbar from "./Navbar";
+import { Link } from "react-router-dom"
 
 const HeroSection = () => {
   return (
-    <section id="home" className="relative h-screen bg-cover bg-center text-white" style={{
+    <section id="." className="relative h-screen bg-cover bg-center text-white" style={{
     backgroundImage:
       "url('/src/assets/house-with-pool-palm-tree-background.jpg')",
   }}>
@@ -27,7 +28,7 @@ const HeroSection = () => {
           turpis justo maecenas faucibus non in non donec tellus turpis.
         </p>
         <button className="px-6 py-3 bg-white text-black rounded-full font-semibold w-fit hover:bg-yellow-400 hover:text-white transition">
-          Book Now
+          <Link to='/booking'>Book Now</Link>
         </button>
       </div>
     </section>

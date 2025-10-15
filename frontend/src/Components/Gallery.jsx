@@ -19,7 +19,7 @@ const Gallery = () => {
       
     <div className="relative py-12 bg-gradient-to-br from-gray-900/90 via-gray-900/80 to-gray-800/70">
       <div className="absolute inset-0 bg-black/60 backdrop-blur-xl" />
-      <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-4">
+      <div className="relative z-10 max-w-7xl mx-auto md:grid grid-cols-1 flex flex-col md:grid-cols-4 gap-4">
         <div className="col-span-2 row-span-2 overflow-hidden rounded-xl bg-white/10 backdrop-blur-md border border-white/10 hover:scale-102 transform transition duration-500">
           <img
             src={Resort1}

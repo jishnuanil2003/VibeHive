@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <body style="font-family: Arial, sans-serif; background:#f8fafc; padding:20px;">
+    <div style="background:#111827; color:white; padding:20px; border-radius:10px;">
+      <h2 style="color:#facc15;">Thanks for choosing VibeHive, {{ booking.name }}!</h2>
+      <p>Your booking has been successfully completed 🎉</p>
+
+      <p>
+        <strong>Room Number:</strong> {{ booking.room_number }}<br>
+        <strong>Check-in:</strong> {{ booking.check_in }}<br>
+        <strong>Check-out:</strong> {{ booking.check_out }}
+      </p>
+
+      <p>
+        When you arrive, please mention your email ID
+        (<strong>{{ booking.email }}</strong>) to the reception to confirm your arrival.
+      </p>
+
+      <p style="margin-top:20px;">We can’t wait to welcome you! 🌴</p>
+      <p style="color:#9ca3af;">— The VibeHive Resort Team</p>
+    </div>
+  </body>
+</html>

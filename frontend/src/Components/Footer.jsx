@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     const[email,setEmail] = useState('')
@@ -14,7 +15,7 @@ const Footer = () => {
 
         {/* Newsletter */}
         <div className="flex flex-col items-center md:items-end space-y-4">
-          <div className="flex items-center border border-white rounded-full overflow-hidden w-[280px] md:w-[350px]">
+          <div className="flex items-center border border-white rounded-full overflow-hidden w-[320px] md:w-[350px]">
             <input onChange={(e)=>setEmail(e.target.value)}
               type="email"
               placeholder="Enter your email address"
@@ -44,13 +45,13 @@ const Footer = () => {
       </div>
 
       {/* Bottom Section */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-gray-300">
+      <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-gray-300">
         {/* Brand Section */}
         <div>
           <h3 className="text-xl font-semibold mb-3 text-white">🏕️ VibeHive</h3>
           <p className="text-sm mb-4">Copyright © VibeHive</p>
           <button className="px-5 py-2 bg-white text-black rounded-full font-semibold hover:bg-yellow-400 hover:text-white transition">
-            Book Now
+            <Link to='/booking'>Book Now</Link>
           </button>
         </div>
 

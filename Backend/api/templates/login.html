@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Login | VibeHive</title>
+
+  <!-- ✅ Tailwind CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0b0b0b, #1a1a1a);
+      min-height: 100vh;
+    }
+  </style>
+</head>
+<body class="flex items-center justify-center min-h-screen text-white">
+
+  <!-- ✅ Login Form -->
+  <form method="POST" class="bg-gray-800/80 backdrop-blur-md p-8 rounded-2xl w-80 shadow-xl border border-gray-700">
+    {% csrf_token %}
+    <h2 class="text-3xl font-semibold mb-6 text-center text-yellow-400">Admin Login</h2>
+
+    {% if error %}
+      <p class="text-red-400 text-sm mb-3 text-center">{{ error }}</p>
+    {% endif %}
+
+    <div class="mb-4">
+      <label class="block mb-2 text-sm text-gray-300">Username</label>
+      <input 
+        type="text" 
+        name="username" 
+        placeholder="Enter username"
+        class="w-full p-2 rounded bg-gray-700/70 border border-gray-600 text-black placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+        required
+      >
+    </div>
+
+    <div class="mb-6">
+      <label class="block mb-2 text-sm text-gray-300">Password</label>
+      <input 
+        type="password" 
+        name="password" 
+        placeholder="Enter password"
+        class="w-full p-2 rounded bg-gray-700/70 border border-gray-600 text-black placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+        required
+      >
+    </div>
+
+    <button type="submit" class="w-full bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-2 rounded-lg transition">
+      Login
+    </button>
+
+    <p class="text-xs text-gray-400 text-center mt-4">
+      © 2025 VibeHive Resorts. All Rights Reserved.
+    </p>
+  </form>
+
+</body>
+</html>
