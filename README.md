@@ -45,12 +45,6 @@ If more time were available, the project could be enhanced with:
 
 ---
 
-## 🙏 Apology Note
-Due to time constraints and compatibility issues on macOS during PostgreSQL setup, this project uses **SQLite** as the default database.  
-However, since Django ORM is database-agnostic, switching to PostgreSQL in future will require only minimal changes in `settings.py`.
-
----
-
 ## 🔗 GitHub Repository
 You can explore the full source code here:  
 👉 [VibeHive GitHub Repo](https://github.com/jishnuanil2003/VibeHive.git)
